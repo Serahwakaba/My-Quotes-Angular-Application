@@ -1,4 +1,4 @@
- <div class="container-fluid"
+ <div class="container-fluid">
     <h2 class="text-center">Create Your Quote</h2>
     <hr>
     <form (ngSubmit)='submitQuote()' #quotesForm='ngForm'>
@@ -34,7 +34,7 @@
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                 <p>The author is required</p>
            </div>
-        </div> -->
+        </div>
      <button type="submit" class="btn btn-outline-success submit">Add Quote</button>
     </form>
   </div>   
