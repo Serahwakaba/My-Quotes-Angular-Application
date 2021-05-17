@@ -9,6 +9,6 @@
           class="fa fa-thumbs-down"></i>Downvotes</button>
           <button (click)='quoteDelete(true)' id="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
           <div class="post">
-                <p>Posted:{{quote.completeDate|date}}</p>
+                <p>Posted:{{quote.completeDate|dateCount}}days ago</p>
             </div>
  </div>
