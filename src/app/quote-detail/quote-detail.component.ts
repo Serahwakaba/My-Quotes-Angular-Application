@@ -16,9 +16,9 @@ export class QuoteDetailComponent implements OnInit {
   numberOfdislike=0
   
 
-  // likebuttonclick(){
-  //   this.quote.numberOflikes ++;
-  // }
+  likebuttonclick(){
+    this.quote.numberOflikes ++;
+  }
   // dislikebuttonclick(){
   //   this.quote.numberOfdislikes ++;
   // }
