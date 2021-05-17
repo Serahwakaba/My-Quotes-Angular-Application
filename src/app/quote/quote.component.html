@@ -1,0 +1,20 @@
+<h1 style=" color: linear-gradient(black,red);
+">POWERFUL EVERYDAY QUOTES</h1>
+<hr>
+<div class="col">
+  <app-form  (addQuote)='addNewQuote($event)'></app-form>
+</div>
+<div class="col-md-8 ">
+  <div class="all-card">
+    <div *ngFor='let quote of quotes;let i=index' class="card-body all">
+      <div class="card-body">
+           <h2 
+            class="card-title two">{{quote.name}}</h2>
+            <p class="three">Posted by:{{quote.poster}} on  {{quote.completeDate|date:'dd/MM/yyyy'}}</p>
+            <button class="btn btn-outline-warning four" (click)='toggleDetails(i)'>Show Quotes Details</button>
+    <app-quote-detail  *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+
+</div>
+</div>
+  </div>
+  </div>

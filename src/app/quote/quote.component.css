@@ -1,0 +1,67 @@
+.center{
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Pridi', serif;;
+}
+
+ 
+.all-card{
+  
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   display: flex;
+  flex-wrap: wrap-reverse;
+  color: whitesmoke;
+  opacity: 0.7;
+  
+  
+  
+}
+.all-card:hover{
+    box-shadow:5px 3px 5px rgb(160, 61, 99) ; 
+    border:1px solid green ;
+    opacity:4 ;
+    color:wheat ;
+    opacity:1 ;
+    border-radius:5% ;
+    background-image: linear-gradient(black,red);
+    
+}
+.all{
+
+margin-top:30px ;
+background-size: contain;
+background-attachment: fixed;
+overflow: hidden;
+width:40% ;
+margin-bottom: 20px; 
+margin-left:20px ;
+margin-right:20px ;
+background-color: rgba(0,0,0,0.374);
+border-radius:5% ;    
+}
+.all:hover{
+    box-shadow:2px 5px rgb(126, 33, 41) ;
+    border-radius:5% ; 
+    
+} 
+.two{
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Pridi', serif;;
+    margin-left:25% ;
+    margin-top:3% ;
+}
+.three{
+    margin-left:8% ;
+    font-size:18px;
+}
+.four{
+    margin-left: 20%;
+    margin-bottom:8% ;
+    font-size:18px;
+    border-radius:10% ;
+}
+.four.hover{
+    background-color:red black ;
+}
