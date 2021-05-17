@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { FormComponent } from './form/form.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { QuotesDirective } from './quotes.directive'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {FormsModule} from '@angular/forms'
     AppComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    FormComponent
+    FormComponent,
+    QuotesDirective
   ],
   imports: [
     BrowserModule,

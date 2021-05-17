@@ -8,7 +8,7 @@
   <div class="all-card">
     <div *ngFor='let quote of quotes;let i=index' class="card-body all">
       <div class="card-body">
-           <h2 
+           <h2 appQuotes
             class="card-title two">{{quote.name}}</h2>
             <p class="three">Posted by:{{quote.poster}} on  {{quote.completeDate|date:'dd/MM/yyyy'}}</p>
             <button class="btn btn-outline-warning four" (click)='toggleDetails(i)'>Show Quotes Details</button>
