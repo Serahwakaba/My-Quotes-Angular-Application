@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 
@@ -5,6 +6,7 @@ import { Quote } from '../quote';
   selector: 'app-quote-detail',
   templateUrl: './quote-detail.component.html',
   styleUrls: ['./quote-detail.component.css']
+  style
 })
 export class QuoteDetailComponent implements OnInit {
 
@@ -14,12 +16,12 @@ export class QuoteDetailComponent implements OnInit {
   numberOfdislike=0
   
 
-  likebuttonclick(){
-    this.quote.numberOflikes ++;
-  }
-  dislikebuttonclick(){
-    this.quote.numberOfdislikes ++;
-  }
+  // likebuttonclick(){
+  //   this.quote.numberOflikes ++;
+  // }
+  // dislikebuttonclick(){
+  //   this.quote.numberOfdislikes ++;
+  // }
   @Output()isComplete=new EventEmitter<boolean>();
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete)
