@@ -16,7 +16,7 @@ export class QuoteComponent implements OnInit {
     new Quote(3,"life quote","The road is loang bt we bt can't just stop","calos.com","Don carlos",new Date(2021,7,20),56,0),
     new Quote(4,'Love quote','One love to dih universe','Tuff Gong','Marley',new Date(2021,1,21),50,0),
     new Quote(1,'Motivation Quote','Anyone who has never made a mistake has never tried anything new',"Albert Einstein","Albert Einstein",new Date(2021,3,25),20,0),
-    new Quote(1,'Sad quote','Anyone who has never made a mistake has never tried anything new',"Albert Einstein","Albert Einstein",new Date(2021,3,25),20,0),
+    new Quote(1,'Sad quote','We must understand that sadness is an ocean, and sometimes we drown, while other days we are forced to swim.',"Albert Einstein","Albert Einstein",new Date(2021,3,25),20,0),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription=!this.quotes[index].showDescription;
