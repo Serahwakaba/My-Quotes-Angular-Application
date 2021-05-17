@@ -6,11 +6,11 @@
             <label for="poster">Your Name</label>
             <input type="text"  class="form-control" id="poster" #poster='ngModel' [(ngModel)]="newQuote.poster" name='poster' required> -->
   
-            <!-- <div [hidden]="poster.valid || poster.pristine" class="alert alert-danger">
+           <div [hidden]="poster.valid || poster.pristine" class="alert alert-danger">
                 <p>Name is required</p>
             </div>
         </div>   
-        <div class="form-group">
+        <div class="form-group"> 
   
             <label for="name">Type of Quote</label>
             <input type="text"  class="form-control" #name='ngModel' [(ngModel)]="newQuote.name" name="name" id="name" required>
@@ -20,7 +20,6 @@
             </div>
         </div>
         <div class="form-group">
-   -->
             <label for="description">State the quote</label>
             <textarea class="form-control" id="description"  #description="ngModel"  rows="2" [(ngModel)]="newQuote.description" name="description" required></textarea>
   
@@ -38,4 +37,4 @@
         </div> -->
      <button type="submit" class="btn btn-outline-success submit">Add Quote</button>
     </form>
-  </div>   -->
+  </div>   
