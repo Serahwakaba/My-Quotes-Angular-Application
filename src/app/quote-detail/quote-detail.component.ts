@@ -6,7 +6,7 @@ import { Quote } from '../quote';
   selector: 'app-quote-detail',
   templateUrl: './quote-detail.component.html',
   styleUrls: ['./quote-detail.component.css']
-  style
+  
 })
 export class QuoteDetailComponent implements OnInit {
 
