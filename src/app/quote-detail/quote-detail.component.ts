@@ -19,9 +19,9 @@ export class QuoteDetailComponent implements OnInit {
   likebuttonclick(){
     this.quote.numberOflikes ++;
   }
-  // dislikebuttonclick(){
-  //   this.quote.numberOfdislikes ++;
-  // }
+  dislikebuttonclick(){
+    this.quote.numberOfdislikes ++;
+  }
   @Output()isComplete=new EventEmitter<boolean>();
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete)
