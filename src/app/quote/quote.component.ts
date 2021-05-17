@@ -16,9 +16,9 @@ export class QuoteComponent implements OnInit {
     new Quote(1,'Motivation Quote','Anyone who has never made a mistake has never tried anything new',"Albert Einstein","Albert Einstein",new Date(2021,3,25),20,0),
     new Quote(1,'Sad quote','Anyone who has never made a mistake has never tried anything new',"Albert Einstein","Albert Einstein",new Date(2021,3,25),20,0),
   ];
-//   toggleDetails(index){
-//     this.quotes[index].showDescription=!this.quotes[index].showDescription;
-//   }
+  toggleDetails(index){
+    this.quotes[index].showDescription=!this.quotes[index].showDescription;
+  }
   
 //  addNewQuote(quote){
 //    let quotelength=this.quotes.length;
