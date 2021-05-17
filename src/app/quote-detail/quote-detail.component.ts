@@ -22,9 +22,14 @@ export class QuoteDetailComponent implements OnInit {
   dislikebuttonclick(){
     this.quote.numberOfdislikes ++;
   }
+  
   @Output()isComplete=new EventEmitter<boolean>();
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete)
+  }
+
+  goalDelete(complete:boolean){
+    this.isComplete.emit(complete);
   }
 
 

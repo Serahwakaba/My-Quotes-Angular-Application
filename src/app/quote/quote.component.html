@@ -12,9 +12,9 @@
             class="card-title two">{{quote.name}}</h2>
             <p class="three">Posted by:{{quote.poster}} on  {{quote.completeDate|date:'dd/MM/yyyy'}}</p>
             <button class="btn btn-outline-warning four" (click)='toggleDetails(i)'>Show Quotes Details</button>
-    <app-quote-detail  *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+            <app-quote-detail *ngIf='quote.showDescription'  (isComplete)='deleteQuote($event,i)'  [quote]='quote'></app-quote-detail>
 
 </div>
-</div> -->
+</div> 
   </div>
   </div>

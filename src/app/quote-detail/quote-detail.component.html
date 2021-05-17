@@ -8,5 +8,7 @@
   <button class="btn btn-secondary" id="dislike" (click)='dislikebuttonclick()'>{{quote.numberOfdislikes}}<i
           class="fa fa-thumbs-down"></i>Dislike</button>
           <button (click)='quoteDelete(true)' id="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
-
-</div>
+          <div class="post">
+                <p>Posted:{{quote.completeDate|date}}</p>
+            </div>
+ </div>
